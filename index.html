@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filipe's Lame Website</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Font Awesome KIT -->
+    <script
+      src="https://kit.fontawesome.com/8a4aa9a9a0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts - Poppins -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Filipe Santos</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link"
+                ><i class="fa-solid fa-house nav__icon"></i>Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#home" class="nav__link"
+                ><i class="fa-solid fa-user nav__icon"></i>About</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#home" class="nav__link"
+                ><i class="fa-solid fa-file nav__icon"></i>Skills</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link"
+                ><i class="fa-solid fa-briefcase nav__icon"></i>Services</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link"
+                ><i class="fa-solid fa-image nav__icon"></i>Portfolio</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#contactme" class="nav__link"
+                ><i class="fa-solid fa-paper-plane nav__icon"></i>Contactme</a
+              >
+            </li>
+          </ul>
+          <i class="fa-solid fa-xmark nav__close nav__icon" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__social">
+            <a href="#" class="home__social-icon"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="#" class="home__social-icon"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="#" class="home__social-icon"
+              ><i class="fa-brands fa-gitlab"></i
+            ></a>
+          </div>
+
+          <div class="home__img">
+            <svg
+              class="home__blob"
+              viewBox="0 0 479 467"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <mask id="mask0" mask-type="alpha">
+                <path
+                  d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+                />
+              </mask>
+              <g mask="url(#mask0)">
+                <path
+                  d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+                />
+                <image
+                  class="home__blob-img"
+                  x="50"
+                  y="60"
+                  href="assets/images/me-icons.png"
+                />
+              </g>
+            </svg>
+          </div>
+
+          <!-- HOME -->
+          <div class="home__data">
+            <h1 class="home__title">Hi, I'am Filipe.</h1>
+            <h3 class="home__subtitle">Some low Software developer.</h3>
+            <p class="home__description">
+              Hii.. Write something about yourself...
+            </p>
+            <a href="#contact" class="button button--flex"
+              >Contact Me<i
+                class="fa-solid fa-paper-plane nav__icon button__icon"
+              ></i
+            ></a>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="fa-solid fa-computer-mouse"></i>
+              <!-- <i class="fa-solid fa-computer-mouse-scrollwheel"></i> -->
+              <span class="home__scroll-name">Scroll down</span>
+              <!-- <i class="fa-solid fa-angle-down"></i> -->
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- END HOME -->
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">My Introduction</span>
+
+      <div class="about__container container grid">
+        <img src="assets/images/me-icons.png" alt="Me" class="about__img" />
+
+        <div class="about__data">
+          Software developer, with extensive experience, working in differents
+          technolies and UI / UX design.
+        </div>
+
+        <div class="about__info">
+          <div>
+            <span class="about__info-title">08+</span>
+            <span class="about__info-name"
+              >Years <br />
+              experience</span
+            >
+          </div>
+          <div>
+            <span class="about__info-title">20+</span>
+            <span class="about__info-name"
+              >Completed <br />
+              projets</span
+            >
+          </div>
+          <div>
+            <span class="about__info-title">05+</span>
+            <span class="about__info-name"
+              >Companies <br />
+              worked</span
+            >
+          </div>
+        </div>
+
+        <div class="about__buttons">
+          <a href="#" class="button button--flex">
+            Donwload CV
+            <i class="fa-solid fa-download button__icon"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- END ABOUT -->
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">My technical level</span>
+
+      <div class="skills__container container grid">
+        <!-- SKILLS Frontend developer -->
+        <div class="skills__content skills__open">
+            <div class="skills__header">
+            <i class="fa-solid fa-code skills__icon"></i>
+            <div>
+              <h1 class="skills__title">Frontend developer</h1>
+              <span class="skills__subtitle">More than 4 years</span>
+            </div>
+
+            <i class="fa-solid fa-angle-down skills__arrow"></i>
+          </div>
+
+          <div class="skills__list grid">
+
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__title">HTML</h3>
+                <span class="skills__number">90%</span>
+              </div>
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__html"></span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__title">CSS</h3>
+                <span class="skills__number">90%</span>
+              </div>
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__css"></span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__title">JS</h3>
+                <span class="skills__number">90%</span>
+              </div>
+              
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__js"></span>
+              </div>
+            </div>
+
+             <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__title">REACT</h3>
+                <span class="skills__number">90%</span>
+              </div>
+              
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__react"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- END Frontend developer -->
+
+
+        <!-- SKILLS Backend developer -->
+        <div class="skills__content skills__open">
+            <div class="skills__header">
+            <i class="fa-solid fa-code skills__icon"></i>
+            <div>
+              <h1 class="skills__title">Backend developer</h1>
+              <span class="skills__subtitle">More than 4 years</span>
+            </div>
+
+            <i class="fa-solid fa-angle-down skills__arrow"></i>
+          </div>
+
+          <div class="skills__list grid">
+
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__title">HTML</h3>
+                <span class="skills__number">90%</span>
+              </div>
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__html"></span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__title">CSS</h3>
+                <span class="skills__number">90%</span>
+              </div>
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__css"></span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__title">JS</h3>
+                <span class="skills__number">90%</span>
+              </div>
+              
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__js"></span>
+              </div>
+            </div>
+
+             <div class="skills__data">
+              <div class="skills__titles">
+                <h3 class="skills__title">REACT</h3>
+                <span class="skills__number">90%</span>
+              </div>
+              
+
+              <div class="skills__bar">
+                <span class="skills__percentage skills__react"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- END Backend developer -->
+
+
+      </div>
+      <!-- END SKILLS DIV 1 -->
+      </div>
+    </section>
+    <!-- END SKILLS -->
+
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
+    <!-- END FOOTER -->
+
+    <!-- Script -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
