@@ -89,26 +89,42 @@ tabs.forEach((tab) => {
 
 // Modal windows Services
 const modalViews = document.querySelectorAll('.services__modal');
-const modalBtns = document.querySelectorAll('.services__button');
-const modalCloses = document.querySelectorAll('.services__modal-close');
+// const modalBtns = document.querySelectorAll('.services__button');
+// const modalCloses = document.querySelectorAll('.services__modal-close');
 
-const modal = function (modalClick) {
-  modalViews[modalClick].classList.add('active__modal');
-};
+const modalContainer = document.querySelector('.services__container');
 
-const modalClose = function (modalClick) {
-  modalViews[modalClick].classList.remove('active__modal');
-};
+// const modal = function (modalClick) {
+//   modalViews[modalClick].classList.add('active__modal');
+// };
 
-modalBtns.forEach((btn, i) =>
-  btn.addEventListener('click', () => {
-    modal(i);
-  })
-);
+// const modalClose = function (modalClick) {
+//   modalViews[modalClick].classList.remove('active__modal');
+// };
 
-modalCloses.forEach((btn, i) =>
-  btn.addEventListener('click', () => {
-    console.log('click');
-    modalClose(i);
-  })
-);
+// modalBtns.forEach((btn, i) =>
+//   btn.addEventListener('click', () => {
+//     modal(i);
+//   })
+// );
+
+// modalCloses.forEach((btn, i) =>
+//   btn.addEventListener('click', () => {
+//     console.log('click');
+//     modalClose(i);
+//   })
+// );
+
+// Event delegation
+modalContainer.addEventListener('click', function (e) {
+  // Matching strategy
+  const open = e.target.closest('.services__button');
+  if (open) {
+    modalViews[open.dataset.modal].classList.add('active__modal');
+  }
+
+  const close = e.target.closest('.services__modal');
+  if (close) {
+    close.classList.remove('active__modal');
+  }
+});

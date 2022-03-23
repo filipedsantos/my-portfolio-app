@@ -456,9 +456,8 @@
             <h3 class="services__title">Ui/Ux <br> Designer</h3>
           </div>
 
-          <span class="button button--flex button--small button--link services__button">
-            View More
-            <i class="fa-solid fa-arrow-down services__button-icon"></i>
+          <span data-modal="0" class="button button--flex button--small button--link services__button">View More<i
+              class="fa-solid fa-arrow-down services__button-icon"></i>
           </span>
 
           <div class="services__modal">
@@ -495,15 +494,14 @@
             <h3 class="services__title">Backend <br> Developer</h3>
           </div>
 
-          <span class="button button--flex button--small button--link services__button">
-            View More
-            <i class="fa-solid fa-arrow-down services__button-icon"></i>
+          <span data-modal="1" class="button button--flex button--small button--link services__button">View More<i
+              class="fa-solid fa-arrow-down services__button-icon"></i>
           </span>
 
-          <div class="services__modal">
+          <div class="services__modal" data-modal="1">
             <div class="services__modal-content">
               <h4 class="services__modal-title">
-                Ui/Ux <br> Designer
+                Backend <br> Developer
               </h4>
               <i class="fa-solid fa-close services__modal-close"></i>
 
@@ -526,6 +524,44 @@
           </div>
         </div>
         <!-- END Services 2 -->
+
+        <!-- Services 3 -->
+        <div class="services__content">
+          <div>
+            <i class="fa-solid fa-code services__icon"></i>
+            <h3 class="services__title">Frontend <br> Developer</h3>
+          </div>
+
+          <span data-modal="2" class="button button--flex button--small button--link services__button">View More<i
+              class="fa-solid fa-arrow-down services__button-icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <h4 class="services__modal-title">
+                Frontend <br> Developer
+              </h4>
+              <i class="fa-solid fa-close services__modal-close"></i>
+
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                  <p>I develop the user interface.</p>
+                </li>
+                <li class="services__modal-service">
+                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                  <p>Web page development.</p>
+                </li>
+                <li class="services__modal-service">
+                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                  <p>I create UX element interactions.</p>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <!-- END Services 3 -->
 
       </div>
     </section>
