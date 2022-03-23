@@ -86,3 +86,29 @@ tabs.forEach((tab) => {
     tab.classList.add('qualification__active');
   });
 });
+
+// Modal windows Services
+const modalViews = document.querySelectorAll('.services__modal');
+const modalBtns = document.querySelectorAll('.services__button');
+const modalCloses = document.querySelectorAll('.services__modal-close');
+
+const modal = function (modalClick) {
+  modalViews[modalClick].classList.add('active__modal');
+};
+
+const modalClose = function (modalClick) {
+  modalViews[modalClick].classList.remove('active__modal');
+};
+
+modalBtns.forEach((btn, i) =>
+  btn.addEventListener('click', () => {
+    modal(i);
+  })
+);
+
+modalCloses.forEach((btn, i) =>
+  btn.addEventListener('click', () => {
+    console.log('click');
+    modalClose(i);
+  })
+);
