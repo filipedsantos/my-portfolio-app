@@ -31,7 +31,7 @@
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list grid">
           <li class="nav__item">
-            <a href="#home" class="nav__link"><i class="fa-solid fa-house nav__icon"></i>Home</a>
+            <a href="#home" class="nav__link active-link"><i class="fa-solid fa-house nav__icon"></i>Home</a>
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link"><i class="fa-solid fa-user nav__icon"></i>About</a>
@@ -53,6 +53,10 @@
       </div>
 
       <div class="nav__btns">
+        <!-- Theme change color -->
+        <i class="fa-solid fa-moon change-theme" id="theme-button"></i>
+
+
         <div class="nav__toggle" id="nav-toggle">
           <i class="fa-solid fa-bars"></i>
         </div>
@@ -65,20 +69,13 @@
   <main class="main">
     <section class="home section" id="home">
       <div class="home__container container grid">
-        <div class="home__social">
-          <a href="#" class="home__social-icon"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#" class="home__social-icon"><i class="fa-brands fa-github"></i></a>
-          <!-- <a href="#" class="home__social-icon"
-              ><i class="fa-brands fa-gitlab"></i
-            ></a> -->
-        </div>
 
         <div class="home__img">
 
-          <img src="assets/images/me-profile.png" alt="Me" class="about__img" />
+          <!-- <img src="assets/images/me-profile.png" alt="Me" class="about__img" /> -->
 
 
-          <!-- <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+          <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <mask id="mask0" mask-type="alpha">
               <path
@@ -87,31 +84,33 @@
             <g mask="url(#mask0)">
               <path
                 d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-              <image class="home__blob-img" x="100" y="20" href="assets/images/me-profile.png" />
+              <image class="home__blob-img" x="60" y="95" href="assets/images/Filipe Santos.png" />
             </g>
-          </svg> -->
+          </svg>
         </div>
 
         <!-- HOME -->
-        <div class="home__data">
+        <div class="home__content">
+
+          <div class="home__social">
+            <a href="#" class="home__social-icon"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="home__social-icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="home__social-icon"><i class="fa-brands fa-github"></i></a>
+            <!-- <a href="#" class="home__social-icon"
+              ><i class="fa-brands fa-gitlab"></i
+            ></a> -->
+          </div>
+
           <h1 class="home__title">Hi, I'am Filipe.</h1>
-          <h3 class="home__subtitle">Some low Software developer.</h3>
+          <h3 class="home__subtitle">Software developer.</h3>
           <p class="home__description">
             Hii.. Write something about yourself...
           </p>
+
           <a href="#contact" class="button button--flex">Contact Me<i
               class="fa-solid fa-paper-plane nav__icon button__icon"></i></a>
         </div>
 
-        <div class="home__scroll">
-          <a href="#about" class="home__scroll-button button--flex">
-            <i class="fa-solid fa-computer-mouse"></i>
-            <!-- <i class="fa-solid fa-computer-mouse-scrollwheel"></i> -->
-            <span class="home__scroll-name">Scroll down</span>
-            <!-- <i class="fa-solid fa-angle-down"></i> -->
-            <i class="fa-solid fa-arrow-down"></i>
-          </a>
-        </div>
       </div>
     </section>
     <!-- END HOME -->
@@ -123,36 +122,46 @@
       <span class="section__subtitle">My Introduction</span>
 
       <div class="about__container container grid">
-        <!-- <img src="assets/images/me-profile.png" alt="Me" class="about__img" /> -->
 
-        <div class="about__data">
-          Software developer, with extensive experience, working in differents
-          technolies and UI / UX design.
+        <div>
+          <img src="assets/images/me-profile.png" alt="Me" class="about__img" />
+
         </div>
 
-        <div class="about__info">
-          <div>
-            <span class="about__info-title">08+</span>
-            <span class="about__info-name">Years <br />
-              experience</span>
-          </div>
-          <div>
-            <span class="about__info-title">20+</span>
-            <span class="about__info-name">Completed <br />
-              projets</span>
-          </div>
-          <div>
-            <span class="about__info-title">05+</span>
-            <span class="about__info-name">Companies <br />
-              worked</span>
-          </div>
-        </div>
+        <div>
 
-        <div class="about__buttons">
-          <a href="#" class="button button--flex">
-            Donwload CV
-            <i class="fa-solid fa-download button__icon"></i>
-          </a>
+
+
+          <div class="about__data">
+            Software developer, with extensive experience, working in differents
+            technolies and UI / UX design.
+          </div>
+
+          <br><br>
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">08+</span>
+              <span class="about__info-name">Years <br />
+                experience</span>
+            </div>
+            <div>
+              <span class="about__info-title">20+</span>
+              <span class="about__info-name">Completed <br />
+                projets</span>
+            </div>
+            <div>
+              <span class="about__info-title">05+</span>
+              <span class="about__info-name">Companies <br />
+                worked</span>
+            </div>
+          </div>
+
+          <div class="about__buttons">
+            <a href="#" class="button button--flex">
+              Donwload CV
+              <i class="fa-solid fa-download button__icon"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -321,7 +330,7 @@
         </div>
 
         <!-- Qualification sections-->
-        <div class="qualifications__sections">
+        <div class="qualification__sections">
 
           <!-- Qualification content 1-->
           <div class="qualification__content qualification__active" data-content id="education">
@@ -616,9 +625,27 @@
               repudiandae non vel exercitationem. Voluptatem, eaque!</span>
           </div>
         </a>
-        <!-- Portfolio Item #1 -->
+        <!-- Portfolio Item #5 -->
         <a href="#" class="portfolio__item">
           <img src="assets/images/img-1.jpg" alt="" class="portfolio__img">
+          <div class="portfolio__data">
+            <h3 class="portfolio__title">Some website</h3>
+            <span class="portfolio__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          </div>
+        </a>
+        <!-- Portfolio Item #6 -->
+        <a href="#" class="portfolio__item">
+          <img src="assets/images/img-3.jpg" alt="" class="portfolio__img">
+          <div class="portfolio__data">
+            <h3 class="portfolio__title">Some website</h3>
+            <span class="portfolio__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+              cumque eos blanditiis sunt fuga, accusantium hic quia alias minus culpa, quaerat fugit numquam corporis
+              repudiandae non vel exercitationem. Voluptatem, eaque!</span>
+          </div>
+        </a>
+        <!-- Portfolio Item #7 -->
+        <a href="#" class="portfolio__item">
+          <img src="assets/images/img-4.jpg" alt="" class="portfolio__img">
           <div class="portfolio__data">
             <h3 class="portfolio__title">Some website</h3>
             <span class="portfolio__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
@@ -742,6 +769,11 @@
     </div>
   </footer>
   <!-- END FOOTER -->
+
+  <!-- Scroll top -->
+  <a href="#" class="scrollTop" id="scroll-top">
+    <i class="fa-solid fa-arrow-up scrollTop-icon"></i>
+  </a>
 
   <!-- Script -->
   <script src="assets/js/script.js"></script>
